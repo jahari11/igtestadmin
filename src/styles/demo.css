@@ -1,0 +1,48 @@
+ul {
+  list-style: none;
+}
+
+.card-box {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: row;
+}
+
+li{
+  width: 20%;
+
+}
+
+
+
+.leaflet-map {
+  width: 80%;
+  margin: 0 auto;
+  height: 400px; 
+  margin-bottom: 20px;
+}
+
+.card-box {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}

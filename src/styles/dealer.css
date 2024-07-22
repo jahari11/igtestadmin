@@ -1,0 +1,18 @@
+.top-shop-container {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+a.btn.btn-primary.btn-add {
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background: transparent;
+}
+.icons {
+  font-size: 30px;
+}
+
+.shop-table {
+  padding: 10px;
+}

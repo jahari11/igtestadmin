@@ -1,0 +1,39 @@
+ul.nav-ul {
+  width: 100%;
+  list-style: none;
+  padding: 40px 10px;
+  margin: 0;
+}
+
+li.nav-li {
+  font-size: 22px;
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+
+li.nav-li a {
+  text-decoration: none;
+  color: #363b48;
+}
+
+li.nav-li:hover {
+  background-color: rgb(97, 97, 97);
+
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+li.nav-li:hover a {
+  color: white;
+}
+
+.nav-li.active {
+  border-bottom: 1px solid blue;
+}
+
+.nav-li.active a {
+  color: blue;
+}

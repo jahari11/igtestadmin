@@ -1,0 +1,143 @@
+.form-grou {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.form-group {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.add-box {
+  padding: 20px;
+  width: 100%;
+}
+
+.form-group input {
+  background: #e1e1e1;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.form-group label {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+
+
+.btn-box {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+h2.shop-h {
+  text-align: center;
+  margin: 20px 0;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 20px;
+}
+
+button.btn-dark {
+  font-size: 20px;
+  padding: 2px 27px;
+  border: none;
+  background: blue;
+  color: white;
+  border-radius: 20px;
+  margin: 20px 0 0 0;
+}
+
+button.btn-edit {
+  border-radius: 20px;
+  margin: 10px;
+  border: none;
+  background: blue;
+  color: white;
+}
+button.btn-delete {
+  border-radius: 20px;
+  margin: 10px;
+  border: none;
+  background: red;
+  color: white;
+}
+
+/* Modal container */
+.edit-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+/* Modal content */
+.edit-modal-content {
+  background-color: #fefefe; /* White background */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow */
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Close button */
+.edit-modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #aaa;
+}
+
+/* Close button hover effect */
+.edit-modal-content .close:hover {
+  color: #333;
+}
+
+/* Form group */
+.edit-modal-content .form-group {
+  margin-bottom: 15px;
+}
+
+/* Form label */
+.edit-modal-content label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Form input */
+.edit-modal-content input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Submit button */
+.edit-modal-content button {
+  background-color: #007bff; /* Blue button */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Submit button hover effect */
+.edit-modal-content button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

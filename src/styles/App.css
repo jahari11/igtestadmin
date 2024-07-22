@@ -1,0 +1,25 @@
+.nav-lay-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  min-height: 100vh;
+}
+.nav--container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar-side {
+  width: 15%;
+  background: rgb(221, 221, 221);
+}
+.content-container {
+  width: 85%;
+}
+
+.log-bo {
+  display: flex;
+  justify-content: flex-end;
+}
