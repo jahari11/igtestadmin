@@ -14,7 +14,7 @@ const Demo = () => {
   useEffect(() => {
     const fetchLocations = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/location/getAll');
+        const response = await axios.get('https://igtestbackend-5ab2183ee5ee.herokuapp.com/api/location/getAll');
         setLocations(response.data);
       } catch (error) {
         console.error('Error fetching locations:', error);

@@ -53,7 +53,7 @@ function Register() {
 
   
       const response = await axios.post(
-        "http://localhost:8000/api/user/register",
+        "https://igtestbackend-5ab2183ee5ee.herokuapp.com/api/user/register",
         formData,
         { headers: { 'Content-Type': 'multipart/form-data' } }
       );

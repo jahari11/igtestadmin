@@ -24,14 +24,14 @@ const Dealer = () => {
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/dealer/getAll")
+    fetch("https://igtestbackend-5ab2183ee5ee.herokuapp.com/api/dealer/getAll")
       .then((response) => response.json())
       .then((data) => setDealer(data))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:8000/api/dealer/delete/${id}`, {
+    fetch(`https://igtestbackend-5ab2183ee5ee.herokuapp.com/api/dealer/delete/${id}`, {
       method: "DELETE",
     })
       .then((response) => {
@@ -83,7 +83,7 @@ const Dealer = () => {
   console.log("editDealer", editDealer)
   console.log("Id", id)
   const handleEditSubmit = () => {
-    fetch(`http://localhost:8000/api/dealer/update/${id}`, {
+    fetch(`https://igtestbackend-5ab2183ee5ee.herokuapp.com/api/dealer/update/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -157,7 +157,7 @@ const Dealer = () => {
                 <td>{index + 1}</td>
                 {
   dealer.profileName ? (
-    <td><img src={`http://localhost:8000/api/user/getImage/${dealer.profileName}`} className="user-img" alt="" /></td>
+    <td><img src={`https://igtestbackend-5ab2183ee5ee.herokuapp.com/api/user/getImage/${dealer.profileName}`} className="user-img" alt="" /></td>
     ):(
     <td><img src={User01} className="user-img" alt="" /></td>
   )

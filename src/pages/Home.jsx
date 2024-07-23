@@ -9,7 +9,7 @@ const Home = () => {
   useEffect(() => {
     // Fetch user count
     axios
-      .get("http://localhost:8000/api/user/getall")
+      .get("https://igtestbackend-5ab2183ee5ee.herokuapp.com/api/user/getall")
       .then((response) => {
         const cusData = response.data.users.filter((users)=> users.role === "customer")
         setUserCount(cusData.length);
@@ -21,7 +21,7 @@ const Home = () => {
 
     // Fetch shop count
     axios
-      .get("http://localhost:8000/api/location/getAll")
+      .get("https://igtestbackend-5ab2183ee5ee.herokuapp.com/api/location/getAll")
       .then((response) => {
         setShopCount(response.data.length);
         console.log("response.data.length", response.data.length);
